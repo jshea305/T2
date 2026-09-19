@@ -4,130 +4,131 @@
     <div class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
       
       <h1 class="section-title" style="text-align: center;">Audio Samples</h1>
-      <p class="shows-subtitle" style="text-align: center; margin-bottom: 2.5rem;">Listen to recordings across our ceremony, cocktail, and holiday repertoires.</p>
+      <p class="shows-subtitle" style="text-align: center; margin-bottom: 2.5rem;">Click any track to listen to our ceremony, cocktail, and holiday performances.</p>
 
       <!-- Ceremony Music -->
-      <div class="sample-category" style="margin-bottom: 3rem;">
-        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Ceremony Music</h2>
-        <div class="sample-grid" style="display: grid; gap: 1rem;">
-          
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>And I Love Her</strong> — The Beatles</p>
-            <audio controls style="width: 100%;"><source src="media/and_i_love_her-the_beatles.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Alla Danza from Water Music</strong> — Handel</p>
-            <audio controls style="width: 100%;"><source src="media/alla_danza_from_water_music-handel.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>A Thousand Years</strong> — Christina Perri</p>
-            <audio controls style="width: 100%;"><source src="media/a_thousand_years-christina_perry.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Ave Maria</strong> — Schubert</p>
-            <audio controls style="width: 100%;"><source src="media/ave_maria-schubert.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Air on a G String</strong> — Bach</p>
-            <audio controls style="width: 100%;"><source src="media/air_on_a_g_string_bach.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Canon in D</strong> — Pachelbel</p>
-            <audio controls style="width: 100%;"><source src="media/canon_in_d_pachelbel.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Minuet</strong> — Mozart</p>
-            <audio controls style="width: 100%;"><source src="media/minuet-mozart.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Serenade</strong> — Schubert</p>
-            <audio controls style="width: 100%;"><source src="media/serenade-schubert.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Wedding Song</strong> — Kenny G</p>
-            <audio controls style="width: 100%;"><source src="media/wedding_song-kenny_g.mp3" type="audio/mpeg"></audio>
-          </div>
-
+      <div class="playlist-card" style="margin-bottom: 3rem;">
+        <h2 class="playlist-header"><i class="fas fa-church"></i> Ceremony Music</h2>
+        
+        <div class="sticky-player">
+          <span class="now-playing-label">Select a track below</span>
+          <audio id="player-ceremony" controls style="width: 100%;">
+            <source src="media/and_i_love_her-the_beatles.mp3" type="audio/mpeg">
+          </audio>
         </div>
+
+        <ul class="tracklist" data-player="player-ceremony">
+          <li class="track-item active" data-src="media/and_i_love_her-the_beatles.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> And I Love Her</span>
+            <span class="track-artist">The Beatles</span>
+          </li>
+          <li class="track-item" data-src="media/alla_danza_from_water_music-handel.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Alla Danza from Water Music</span>
+            <span class="track-artist">Handel</span>
+          </li>
+          <li class="track-item" data-src="media/a_thousand_years-christina_perry.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> A Thousand Years</span>
+            <span class="track-artist">Christina Perri</span>
+          </li>
+          <li class="track-item" data-src="media/ave_maria-schubert.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Ave Maria</span>
+            <span class="track-artist">Schubert</span>
+          </li>
+          <li class="track-item" data-src="media/air_on_a_g_string_bach.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Air on a G String</span>
+            <span class="track-artist">Bach</span>
+          </li>
+          <li class="track-item" data-src="media/canon_in_d_pachelbel.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Canon in D</span>
+            <span class="track-artist">Pachelbel</span>
+          </li>
+          <li class="track-item" data-src="media/minuet-mozart.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Minuet</span>
+            <span class="track-artist">Mozart</span>
+          </li>
+          <li class="track-item" data-src="media/serenade-schubert.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Serenade</span>
+            <span class="track-artist">Schubert</span>
+          </li>
+          <li class="track-item" data-src="media/wedding_song-kenny_g.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Wedding Song</span>
+            <span class="track-artist">Kenny G</span>
+          </li>
+        </ul>
       </div>
 
       <!-- Cocktail Music -->
-      <div class="sample-category" style="margin-bottom: 3rem;">
-        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Cocktail Music</h2>
-        <div class="sample-grid" style="display: grid; gap: 1rem;">
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>I'm Yours</strong> — Jason Mraz</p>
-            <audio controls style="width: 100%;"><source src="media/im_yours-jason_mraz.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Don't Get Around Much Anymore</strong></p>
-            <audio controls style="width: 100%;"><source src="media/dont_get_around_much_anymore.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Just The Way You Are</strong> — Billy Joel</p>
-            <audio controls style="width: 100%;"><source src="media/just_the_way_you_are.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Autumn Leaves</strong></p>
-            <audio controls style="width: 100%;"><source src="media/autumn_leaves.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Black Orpheus</strong></p>
-            <audio controls style="width: 100%;"><source src="media/black_orpheus.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>How High The Moon</strong></p>
-            <audio controls style="width: 100%;"><source src="media/how_high_the_moon.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>The Girl From Ipanema</strong></p>
-            <audio controls style="width: 100%;"><source src="media/the_girl_from_ipanema.mp3" type="audio/mpeg"></audio>
-          </div>
-
+      <div class="playlist-card" style="margin-bottom: 3rem;">
+        <h2 class="playlist-header"><i class="fas fa-glass-martini-alt"></i> Cocktail Music</h2>
+        
+        <div class="sticky-player">
+          <span class="now-playing-label">Select a track below</span>
+          <audio id="player-cocktail" controls style="width: 100%;">
+            <source src="media/im_yours-jason_mraz.mp3" type="audio/mpeg">
+          </audio>
         </div>
+
+        <ul class="tracklist" data-player="player-cocktail">
+          <li class="track-item active" data-src="media/im_yours-jason_mraz.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> I'm Yours</span>
+            <span class="track-artist">Jason Mraz</span>
+          </li>
+          <li class="track-item" data-src="media/dont_get_around_much_anymore.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Don't Get Around Much Anymore</span>
+            <span class="track-artist">Jazz Standard</span>
+          </li>
+          <li class="track-item" data-src="media/just_the_way_you_are.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Just The Way You Are</span>
+            <span class="track-artist">Billy Joel</span>
+          </li>
+          <li class="track-item" data-src="media/autumn_leaves.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Autumn Leaves</span>
+            <span class="track-artist">Jazz Standard</span>
+          </li>
+          <li class="track-item" data-src="media/black_orpheus.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Black Orpheus</span>
+            <span class="track-artist">Bossa Nova</span>
+          </li>
+          <li class="track-item" data-src="media/how_high_the_moon.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> How High The Moon</span>
+            <span class="track-artist">Jazz Standard</span>
+          </li>
+          <li class="track-item" data-src="media/the_girl_from_ipanema.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> The Girl From Ipanema</span>
+            <span class="track-artist">Bossa Nova</span>
+          </li>
+        </ul>
       </div>
 
       <!-- Holiday Music -->
-      <div class="sample-category" style="margin-bottom: 3rem;">
-        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Holiday Music</h2>
-        <div class="sample-grid" style="display: grid; gap: 1rem;">
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Frosty The Snowman</strong></p>
-            <audio controls style="width: 100%;"><source src="media/frosty_the_snowman.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>It's Beginning To Look Like Christmas</strong></p>
-            <audio controls style="width: 100%;"><source src="media/its_beginning_to_look_like_christmas.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>Silver Bells</strong></p>
-            <audio controls style="width: 100%;"><source src="media/silver_bells.mp3" type="audio/mpeg"></audio>
-          </div>
-
-          <div class="audio-item">
-            <p style="margin-bottom: 0.3rem;"><strong>The Christmas Song</strong> (Chestnuts Roasting on an Open Fire)</p>
-            <audio controls style="width: 100%;"><source src="media/the_christmas_song__chestnuts_roasting_on_an_open_fire_.mp3" type="audio/mpeg"></audio>
-          </div>
-
+      <div class="playlist-card" style="margin-bottom: 3rem;">
+        <h2 class="playlist-header"><i class="fas fa-snowflake"></i> Holiday Music</h2>
+        
+        <div class="sticky-player">
+          <span class="now-playing-label">Select a track below</span>
+          <audio id="player-holiday" controls style="width: 100%;">
+            <source src="media/frosty_the_snowman.mp3" type="audio/mpeg">
+          </audio>
         </div>
+
+        <ul class="tracklist" data-player="player-holiday">
+          <li class="track-item active" data-src="media/frosty_the_snowman.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Frosty The Snowman</span>
+            <span class="track-artist">Holiday Favorite</span>
+          </li>
+          <li class="track-item" data-src="media/its_beginning_to_look_like_christmas.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> It's Beginning To Look Like Christmas</span>
+            <span class="track-artist">Holiday Favorite</span>
+          </li>
+          <li class="track-item" data-src="media/silver_bells.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> Silver Bells</span>
+            <span class="track-artist">Holiday Favorite</span>
+          </li>
+          <li class="track-item" data-src="media/the_christmas_song__chestnuts_roasting_on_an_open_fire_.mp3">
+            <span class="track-title"><i class="fas fa-play-circle"></i> The Christmas Song</span>
+            <span class="track-artist">Chestnuts Roasting...</span>
+          </li>
+        </ul>
       </div>
 
       <!-- Call to Action -->
@@ -140,3 +141,28 @@
     </div>
   </section>
 </main>
+
+<!-- Lightweight Interactive Script -->
+<script>
+  document.querySelectorAll('.tracklist').forEach(list => {
+    const playerID = list.getAttribute('data-player');
+    const player = document.getElementById(playerID);
+    const label = list.previousElementSibling.querySelector('.now-playing-label');
+
+    list.querySelectorAll('.track-item').forEach(track => {
+      track.addEventListener('click', () => {
+        // Remove active class from siblings
+        list.querySelectorAll('.track-item').forEach(t => t.classList.remove('active'));
+        track.classList.add('active');
+
+        // Update player source and play
+        const src = track.getAttribute('data-src');
+        const songName = track.querySelector('.track-title').textContent.trim();
+        
+        player.src = src;
+        label.textContent = "Now Playing: " + songName;
+        player.play();
+      });
+    });
+  });
+</script>
