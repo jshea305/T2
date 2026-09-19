@@ -366,3 +366,83 @@
     max-width: 320px;
   }
 }
+/* Playlist Cards styling for Take 2 theme */
+.playlist-card {
+  padding: 0 !important;
+  overflow: hidden;
+  margin-bottom: 36px;
+}
+
+.playlist-header {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--text-main);
+  padding: 24px 32px 16px 32px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 0;
+}
+
+.playlist-header::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--accent-gold);
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.sticky-player {
+  background-color: #fcfbfa;
+  padding: 16px 32px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.now-playing-label {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--accent-gold);
+  margin-bottom: 6px;
+}
+
+/* Tracklist */
+.tracklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.track-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 32px;
+  border-bottom: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.25rem;
+}
+
+.track-item:last-child {
+  border-bottom: none;
+}
+
+.track-item:hover {
+  background-color: rgba(184, 151, 98, 0.06);
+}
+
+.track-item.active {
+  background-color: rgba(184, 151, 98, 0.12);
+  color: var(--accent-gold);
+  font-weight: 600;
+}
+
+.track-artist {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
