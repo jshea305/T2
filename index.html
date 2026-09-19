@@ -122,12 +122,19 @@
 
   
 <script>
-  const menuToggle = document.querySelector('.mobile-menu-toggle');
-  const mainNav = document.querySelector('.main-nav');
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navLinks = document.querySelector('.nav-links');
 
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      mainNav.classList.toggle('active');
+  if (toggleButton && navLinks) {
+    toggleButton.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
     });
   }
 </script>
