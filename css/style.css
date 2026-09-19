@@ -1,1 +1,73 @@
+/* Sticky Global Top Header */
+.site-header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #eae5dd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
 
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-logo h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #2d2a26;
+    margin-bottom: 12px;
+}
+
+.site-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.main-nav a {
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    color: #6e6a65;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 4px 8px;
+    transition: color 0.3s ease, border-color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #b89762;
+    border-bottom-color: #b89762;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .site-logo h1 {
+        font-size: 1.8rem;
+    }
+    .main-nav ul {
+        gap: 10px;
+    }
+    .main-nav a {
+        font-size: 0.95rem;
+        padding: 2px 4px;
+    }
+}
