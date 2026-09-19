@@ -446,3 +446,55 @@
   color: var(--text-muted);
   font-style: italic;
 }
+
+/* Hide toggle button by default on desktop */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    color: var(--text-main, #2d2a26);
+    cursor: pointer;
+    padding: 8px;
+}
+
+/* Mobile Responsiveness (768px and under) */
+@media (max-width: 768px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .mobile-menu-toggle {
+        display: block; /* Show hamburger button on mobile */
+    }
+
+    .main-nav {
+        display: none; /* Hide navigation list by default on mobile */
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: var(--card-bg, #ffffff);
+        border-bottom: 1px solid var(--border-color, #eae5dd);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        padding: 16px 0;
+    }
+
+    /* Class added by JavaScript when toggled open */
+    .main-nav.active {
+        display: block;
+    }
+
+    .main-nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .main-nav a {
+        display: block;
+        padding: 8px 16px;
+    }
+}
