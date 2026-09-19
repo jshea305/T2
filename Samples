@@ -1,1 +1,142 @@
+<!-- Main Content -->
+<main>
+  <section class="samples-section">
+    <div class="container" style="max-width: 900px; margin: 0 auto; padding: 2rem 1rem;">
+      
+      <h1 class="section-title" style="text-align: center;">Audio Samples</h1>
+      <p class="shows-subtitle" style="text-align: center; margin-bottom: 2.5rem;">Listen to recordings across our ceremony, cocktail, and holiday repertoires.</p>
 
+      <!-- Ceremony Music -->
+      <div class="sample-category" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Ceremony Music</h2>
+        <div class="sample-grid" style="display: grid; gap: 1rem;">
+          
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>And I Love Her</strong> — The Beatles</p>
+            <audio controls style="width: 100%;"><source src="media/and_i_love_her-the_beatles.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Alla Danza from Water Music</strong> — Handel</p>
+            <audio controls style="width: 100%;"><source src="media/alla_danza_from_water_music-handel.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>A Thousand Years</strong> — Christina Perri</p>
+            <audio controls style="width: 100%;"><source src="media/a_thousand_years-christina_perry.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Ave Maria</strong> — Schubert</p>
+            <audio controls style="width: 100%;"><source src="media/ave_maria-schubert.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Air on a G String</strong> — Bach</p>
+            <audio controls style="width: 100%;"><source src="media/air_on_a_g_string_bach.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Canon in D</strong> — Pachelbel</p>
+            <audio controls style="width: 100%;"><source src="media/canon_in_d_pachelbel.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Minuet</strong> — Mozart</p>
+            <audio controls style="width: 100%;"><source src="media/minuet-mozart.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Serenade</strong> — Schubert</p>
+            <audio controls style="width: 100%;"><source src="media/serenade-schubert.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Wedding Song</strong> — Kenny G</p>
+            <audio controls style="width: 100%;"><source src="media/wedding_song-kenny_g.mp3" type="audio/mpeg"></audio>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Cocktail Music -->
+      <div class="sample-category" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Cocktail Music</h2>
+        <div class="sample-grid" style="display: grid; gap: 1rem;">
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>I'm Yours</strong> — Jason Mraz</p>
+            <audio controls style="width: 100%;"><source src="media/im_yours-jason_mraz.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Don't Get Around Much Anymore</strong></p>
+            <audio controls style="width: 100%;"><source src="media/dont_get_around_much_anymore.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Just The Way You Are</strong> — Billy Joel</p>
+            <audio controls style="width: 100%;"><source src="media/just_the_way_you_are.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Autumn Leaves</strong></p>
+            <audio controls style="width: 100%;"><source src="media/autumn_leaves.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Black Orpheus</strong></p>
+            <audio controls style="width: 100%;"><source src="media/black_orpheus.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>How High The Moon</strong></p>
+            <audio controls style="width: 100%;"><source src="media/how_high_the_moon.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>The Girl From Ipanema</strong></p>
+            <audio controls style="width: 100%;"><source src="media/the_girl_from_ipanema.mp3" type="audio/mpeg"></audio>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Holiday Music -->
+      <div class="sample-category" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--highlight); border-bottom: 2px solid var(--highlight); padding-bottom: 8px; margin-bottom: 1.5rem;">Holiday Music</h2>
+        <div class="sample-grid" style="display: grid; gap: 1rem;">
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Frosty The Snowman</strong></p>
+            <audio controls style="width: 100%;"><source src="media/frosty_the_snowman.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>It's Beginning To Look Like Christmas</strong></p>
+            <audio controls style="width: 100%;"><source src="media/its_beginning_to_look_like_christmas.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>Silver Bells</strong></p>
+            <audio controls style="width: 100%;"><source src="media/silver_bells.mp3" type="audio/mpeg"></audio>
+          </div>
+
+          <div class="audio-item">
+            <p style="margin-bottom: 0.3rem;"><strong>The Christmas Song</strong> (Chestnuts Roasting on an Open Fire)</p>
+            <audio controls style="width: 100%;"><source src="media/the_christmas_song__chestnuts_roasting_on_an_open_fire_.mp3" type="audio/mpeg"></audio>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div style="margin-top: 3.5rem; padding: 2rem; background: rgba(34, 18, 45, 0.8); border: 1px solid var(--highlight); border-radius: 12px; text-align: center;">
+        <h3 style="color: var(--highlight); font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 1rem;">Looking for Specific Songs?</h3>
+        <p style="color: var(--text-light); margin-bottom: 1.5rem;">We love learning special requests and customizing setlists for your event.</p>
+        <a href="index.html#contact" class="btn">Get in Touch</a>
+      </div>
+
+    </div>
+  </section>
+</main>
