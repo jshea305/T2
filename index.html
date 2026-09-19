@@ -1,1 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take 2 - Flute/Saxophone &amp; Guitar Duo</title>
 
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:site_name" content="Take 2" />
+  <meta property="og:title" content="Take 2 - Live Music Duo" />
+  <meta property="og:description" content="Flute/Saxophone and Guitar Duo offering live music for weddings, private events, and special occasions." />
+  <meta property="og:url" content="https://www.take2musicnow.com/" />
+  <meta property="og:image" content="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png" />
+
+  <!-- Google Fonts & Tailwind CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Raleway', 'sans-serif'],
+            serif: ['Lora', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-stone-900 text-stone-100 font-sans antialiased flex flex-col min-h-screen">
+
+  <!-- Header Navigation -->
+  <header class="w-full bg-stone-950/90 backdrop-blur border-b border-stone-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-serif font-bold tracking-wide text-amber-100 hover:text-white transition-colors">
+        Take 2
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-stone-300">
+        <a href="index.html" class="text-amber-400 font-semibold">Home</a>
+        <a href="about.html" class="hover:text-amber-200 transition-colors">About</a>
+        <a href="contact.html" class="hover:text-amber-200 transition-colors">Contact</a>
+        <a href="samples.html" class="hover:text-amber-200 transition-colors">Samples</a>
+        <a href="song-list.html" class="hover:text-amber-200 transition-colors">Song List</a>
+        <a href="testimonials.html" class="hover:text-amber-200 transition-colors">Testimonials</a>
+        <a href="meet-take2.html" class="hover:text-amber-200 transition-colors">Meet Take2</a>
+        <a href="pictures.html" class="hover:text-amber-200 transition-colors">Pictures</a>
+        <a href="videos.html" class="hover:text-amber-200 transition-colors">Videos</a>
+      </nav>
+
+      <!-- Mobile Menu Toggle Button -->
+      <button id="mobile-menu-btn" class="md:hidden text-stone-300 hover:text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-stone-950 border-b border-stone-800 px-4 pt-2 pb-4 space-y-2 text-sm text-stone-300">
+      <a href="index.html" class="block py-1 text-amber-400 font-semibold">Home</a>
+      <a href="about.html" class="block py-1 hover:text-amber-200">About</a>
+      <a href="contact.html" class="block py-1 hover:text-amber-200">Contact</a>
+      <a href="samples.html" class="block py-1 hover:text-amber-200">Samples</a>
+      <a href="song-list.html" class="block py-1 hover:text-amber-200">Song List</a>
+      <a href="testimonials.html" class="block py-1 hover:text-amber-200">Testimonials</a>
+      <a href="meet-take2.html" class="block py-1 hover:text-amber-200">Meet Take2</a>
+      <a href="pictures.html" class="block py-1 hover:text-amber-200">Pictures</a>
+      <a href="videos.html" class="block py-1 hover:text-amber-200">Videos</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-cover bg-center py-24 md:py-36" style="background-image: url('uploads/7/5/7/3/75738559/background-images/203247543.jpg');">
+    <div class="absolute inset-0 bg-stone-950/70"></div>
+    <div class="relative max-w-4xl mx-auto px-4 text-center">
+      <h1 class="text-4xl md:text-6xl font-serif font-bold text-stone-100 mb-4 tracking-wide">
+        Take 2
+      </h1>
+      <p class="text-xl md:text-2xl font-light text-amber-200/90 tracking-wide">
+        Flute/Saxophone and Guitar Duo
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content: Vendor Badges & Reviews -->
+  <main class="flex-grow max-w-5xl mx-auto px-4 py-16 w-full text-center space-y-12">
+    
+    <!-- WeddingWire Badge -->
+    <div class="flex justify-center items-center min-h-[80px]">
+      <script src="https://cdn1.weddingwire.com/_js/wp-rated.js?v=4"></script>
+      <a target="_blank" id="wp-rated-img" href="https://www.weddingwire.com/biz/take-2-coventry/8393700d30617f09.html" title="Reviewed on WeddingWire">
+        <span id="wp-rated-reviews"></span>
+      </a>
+      <script>
+        if (typeof wpShowRatedWW === 'function') {
+          wpShowRatedWW('407434');
+        }
+      </script>
+    </div>
+
+    <hr class="border-stone-800 my-8 w-2/3 mx-auto" />
+
+    <!-- The Knot Badge -->
+    <div class="flex justify-center items-center">
+      <a target="_blank" href="https://www.theknot.com/marketplace/redirect-1059131?utm_source=vendor_website&amp;utm_medium=banner&amp;utm_term=1e00a75f-6153-42bf-b6f5-a7bd00ab5fe5&amp;utm_campaign=vendor_badge_assets" class="hover:opacity-90 transition-opacity">
+        <img alt="As Seen on The Knot" src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png" width="190" class="mx-auto" />
+      </a>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-stone-950 text-stone-400 border-t border-stone-800 py-12 px-4">
+    <div class="max-w-3xl mx-auto text-center space-y-6">
+      <h2 class="text-lg md:text-xl font-serif text-stone-200 leading-relaxed">
+        Don't see what you're looking for?<br />
+        We love to learn new music!
+      </h2>
+
+      <div class="space-y-4 pt-2 text-sm md:text-base">
+        <p class="font-semibold text-amber-200">Contact:</p>
+        
+        <div>
+          <p class="font-medium text-stone-300">Dan Reynolds:</p>
+          <p><a href="mailto:dan@take2musicnow.com" class="hover:text-amber-300 underline underline-offset-4 decoration-stone-700">dan@take2musicnow.com</a></p>
+          <p>(401) 215-6638</p>
+        </div>
+
+        <div>
+          <p class="font-medium text-stone-300">Jeff Shea:</p>
+          <p><a href="mailto:jeff@take2musicnow.com" class="hover:text-amber-300 underline underline-offset-4 decoration-stone-700">jeff@take2musicnow.com</a></p>
+          <p>(401) 741-6367</p>
+        </div>
+      </div>
+
+      <div class="pt-8 text-xs text-stone-500">
+        Copyright &copy; 2026 Take 2. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script for Mobile Navigation -->
+  <script>
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
