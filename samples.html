@@ -234,27 +234,7 @@
   </script>
 
   <!-- Player Script -->
-  <script>
-    document.querySelectorAll('.tracklist').forEach(list => {
-      const playerID = list.getAttribute('data-player');
-      const player = document.getElementById(playerID);
-      const label = list.previousElementSibling.querySelector('.now-playing-label');
-
-      list.querySelectorAll('.track-item').forEach(track => {
-        track.addEventListener('click', () => {
-          list.querySelectorAll('.track-item').forEach(t => t.classList.remove('active'));
-          track.classList.add('active');
-
-          const src = track.getAttribute('data-src');
-          const songName = track.querySelector('.track-title').textContent.trim();
-          
-          player.src = src;
-          label.textContent = "Now Playing: " + songName;
-          player.play();
-        });
-      });
-    });
-  </script>
+ <script src="js/menu.js"></script>
 
 </body>
 </html>
