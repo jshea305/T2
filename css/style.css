@@ -8,27 +8,9 @@
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
 }
 
-.header-container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
-}
 
-.site-logo h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.2rem;
-    font-weight: 600;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #2d2a26;
-    margin-bottom: 12px;
-}
 
-.site-logo a {
-    text-decoration: none;
-    color: inherit;
-}
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -41,11 +23,8 @@
 }
 
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-    .site-logo h1 {
-        font-size: 1.8rem;
-    }
+
+  
    
   :root {
             --bg-color: #fdfbf7;
@@ -434,46 +413,9 @@
     padding: 8px;
 }
 
-/* Mobile Responsiveness (768px and under) */
-@media (max-width: 768px) {
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
 
-    .mobile-menu-toggle {
-        display: block; /* Show hamburger button on mobile */
-    }
 
-    .main-nav {
-        display: none; /* Hide navigation list by default on mobile */
-        width: 100%;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        background-color: var(--card-bg, #ffffff);
-        border-bottom: 1px solid var(--border-color, #eae5dd);
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        padding: 16px 0;
-    }
-
-    /* Class added by JavaScript when toggled open */
-    .main-nav.active {
-        display: block;
-    }
-
-    .main-nav ul {
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .main-nav a {
-        display: block;
-        padding: 8px 16px;
-    }
-}
+  
 /* Header & Nav Layout */
 .site-header {
   background-color: #ffffff;
