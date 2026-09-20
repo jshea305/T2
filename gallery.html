@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-       <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photo Gallery</title>
-   
+    <title>Photo Gallery - Take 2</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Shared Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-      <header class="site-header">
-    <nav class="nav-container">
-      <div class="nav-logo">
-        <a href="index.html">TAKE 2</a>
-      </div>
+    <!-- Global Site Header -->
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">TAKE 2</a>
+            </div>
 
-      <button
-        class="mobile-menu-toggle"
-        type="button"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-      >
-        <i class="fas fa-bars"></i>
-      </button>
+            <button
+                class="mobile-menu-toggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-expanded="false"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
 
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="samples.html">Samples</a></li>
-        <li><a href="song-list.html">Song List</a></li>
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="meet-take2.html">Meet Take2</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-      </ul>
-    </nav>
-  </header>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="samples.html">Samples</a></li>
+                <li><a href="song-list.html">Song List</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="meet-take2.html">Meet Take2</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <main class="gallery-grid">
-        <!-- Photo 1 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 1" loading="lazy">
-            <div class="caption">Photo Title 1</div>
-        </div>
+    <!-- Page Title Header -->
+    <div class="container">
+        <header style="text-align: center; margin-bottom: 40px;">
+            <h1 style="font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 500; margin-bottom: 6px;">Photo Gallery</h1>
+            <p style="font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-style: italic; color: var(--accent-gold, #b89762);">Highlights from performances, weddings, and private events</p>
+        </header>
 
-        <!-- Photo 2 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 2" loading="lazy">
-            <div class="caption">Photo Title 2</div>
-        </div>
+        <!-- Main Gallery Grid -->
+        <main class="gallery-grid">
+            <!-- Photo 1 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 1" loading="lazy">
+                <div class="caption">Photo Title 1</div>
+            </div>
 
-        <!-- Photo 3 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 3" loading="lazy">
-            <div class="caption">Photo Title 3</div>
-        </div>
+            <!-- Photo 2 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 2" loading="lazy">
+                <div class="caption">Photo Title 2</div>
+            </div>
 
-        <!-- Photo 4 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 4" loading="lazy">
-            <div class="caption">Photo Title 4</div>
-        </div>
+            <!-- Photo 3 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 3" loading="lazy">
+                <div class="caption">Photo Title 3</div>
+            </div>
 
-        <!-- Photo 5 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 5" loading="lazy">
-            <div class="caption">Photo Title 5</div>
-        </div>
+            <!-- Photo 4 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 4" loading="lazy">
+                <div class="caption">Photo Title 4</div>
+            </div>
 
-        <!-- Photo 6 -->
-        <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
-            <img src="https://via.placeholder.com/600x400" alt="Sample Image 6" loading="lazy">
-            <div class="caption">Photo Title 6</div>
-        </div>
-    </main>
+            <!-- Photo 5 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 5" loading="lazy">
+                <div class="caption">Photo Title 5</div>
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="gallery-item" onclick="openLightbox('https://via.placeholder.com/1200x800')">
+                <img src="https://via.placeholder.com/600x400" alt="Sample Image 6" loading="lazy">
+                <div class="caption">Photo Title 6</div>
+            </div>
+        </main>
+
+        <!-- Global Site Footer -->
+        <footer class="site-footer">
+            <div class="footer-container">
+                <h2>Don't see what you're looking for?</h2>
+                <p class="footer-tagline">We love to learn new music!</p>
+
+                <div class="contact-card-container">
+                    <div class="contact-card">
+                        <strong>Dan Reynolds</strong>
+                        <p><a href="mailto:danreynoldsmusic@gmail.com">danreynoldsmusic@gmail.com</a></p>
+                        <p><a href="tel:4012156638">(401) 215-6638</a></p>
+                    </div>
+
+                    <div class="contact-card">
+                        <strong>Jeff Shea</strong>
+                        <p><a href="mailto:jshea305@gmail.com">jshea305@gmail.com</a></p>
+                        <p><a href="tel:4017416367">(401) 741-6367</a></p>
+                    </div>
+                </div>
+
+                <div class="badges">
+                    <a target="_blank" href="https://www.theknot.com/marketplace/redirect-1059131?utm_source=vendor_website&amp;utm_medium=banner&amp;utm_term=1e00a75f-6153-42bf-b6f5-a7bd00ab5fe5&amp;utm_campaign=vendor_badge_assets" rel="noopener">
+                        <img alt="As Seen on The Knot" border="0" src="https://www.xoedge.com/myaccount/2019/website-share/VendorBadge_AsSeenOnWeb.png" width="160">
+                    </a>
+                </div>
+
+                <p class="copyright">Copyright &copy; 2026 Take 2. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
-        <span class="close-btn">&times;</span>
+        <button type="button" class="close-btn" aria-label="Close image">&times;</button>
         <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged view">
     </div>
 
-<script src="js/menu.js"></script>>
-
+    <!-- Combined Menu & Lightbox Script -->
+    <script src="js/menu.js"></script>
 </body>
 </html>
