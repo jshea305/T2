@@ -29,48 +29,24 @@
     text-decoration: none;
     color: inherit;
 }
-
-.main-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 24px;
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+.nav-links a {
+  color: #6e6a65;
+}
+.nav-links.active {
+  display: flex;
 }
 
-.main-nav a {
-    font-family: 'Cormorant Garamond', serif;
-    text-decoration: none;
-    color: #6e6a65;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding: 4px 8px;
-    transition: color 0.3s ease, border-color 0.3s ease;
-    border-bottom: 2px solid transparent;
-}
-
-.main-nav a:hover,
-.main-nav a.active {
-    color: #b89762;
-    border-bottom-color: #b89762;
-}
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .site-logo h1 {
         font-size: 1.8rem;
     }
-    .main-nav ul {
-        gap: 10px;
-    }
-    .main-nav a {
-        font-size: 0.95rem;
-        padding: 2px 4px;
-    }
-}
+   
   :root {
             --bg-color: #fdfbf7;
             --card-bg: #ffffff;
