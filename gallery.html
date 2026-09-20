@@ -80,28 +80,7 @@
         <img id="lightbox-img" class="lightbox-img" src="" alt="Enlarged view">
     </div>
 
-    <script>
-        function openLightbox(imageSrc) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightboxImg.src = imageSrc;
-            lightbox.classList.add('active');
-        }
-
-        function closeLightbox(event) {
-            // Close if clicking outside the image or on the close button
-            if (event.target.id === 'lightbox' || event.target.classList.contains('close-btn')) {
-                document.getElementById('lightbox').classList.remove('active');
-            }
-        }
-
-        // Close modal when Escape key is pressed
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape') {
-                document.getElementById('lightbox').classList.remove('active');
-            }
-        });
-    </script>
+<script src="js/menu.js"></script>>
 
 </body>
 </html>
