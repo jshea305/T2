@@ -647,14 +647,23 @@
     font-size: 1.7rem;
   }
 
-  .mobile-menu-toggle {
-    display: block;
-  }
+/* ==========================================================================
+   Consolidated Mobile Navigation (Max-Width: 768px)
+   ========================================================================== */
+
 @media (max-width: 768px) {
+  /* Show hamburger button on mobile */
   .mobile-menu-toggle {
-    display: block;
+    display: block !important;
+    background: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: var(--text-main, #2d2a26);
+    cursor: pointer;
+    padding: 8px;
   }
 
+  /* Mobile Dropdown Container */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -663,14 +672,48 @@
     top: 100%;
     left: 0;
     background-color: var(--card-bg, #ffffff);
-    border-bottom: 1px solid var(--border-color, #eae5dd);
-    padding: 20px;
-    gap: 16px;
-    box-shadow: var(--shadow);
+    border-bottom: 2px solid var(--accent-gold, #b89762);
+    padding: 12px 0;
+    gap: 0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+    z-index: 1000;
   }
 
+  /* Display dropdown when JS toggles 'active' */
   .nav-links.active {
-    display: flex;
+    display: flex !important;
+  }
+
+  /* Menu List Items */
+  .nav-links li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color, #eae5dd);
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  /* Clean Link Typography & Tap Target Sizes */
+  .nav-links a {
+    display: block;
+    padding: 14px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-main, #2d2a26) !important;
+    text-decoration: none !important;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+
+  /* Mobile Hover/Tap State */
+  .nav-links a:hover,
+  .nav-links a:active {
+    background-color: rgba(184, 151, 98, 0.08);
+    color: var(--accent-gold, #b89762) !important;
   }
 }
 /* ==========================================================================
