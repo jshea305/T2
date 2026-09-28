@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take 2 Duo - Digital Contact Card</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-gold: #d4af37;
+            --text-light: #f8fafc;
+            --text-muted: #94a3b8;
+        }
 
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1.5rem;
+        }
+
+        .digital-card {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 2rem 1.5rem;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .screenshot-banner {
+            background-color: rgba(212, 175, 55, 0.15);
+            border: 1px dashed var(--accent-gold);
+            color: var(--accent-gold);
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            color: var(--accent-gold);
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-block {
+            background-color: rgba(255, 255, 255, 0.03);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            text-align: left;
+        }
+
+        .contact-block strong {
+            display: block;
+            color: var(--accent-gold);
+            font-size: 1.05rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-block a {
+            color: var(--text-light);
+            text-decoration: none;
+            display: block;
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        .action-btn {
+            display: block;
+            width: 100%;
+            background-color: var(--accent-gold);
+            color: #0f172a;
+            font-weight: 600;
+            padding: 0.85rem;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-top: 1.25rem;
+            transition: opacity 0.2s;
+        }
+
+        .website-link {
+            display: block;
+            margin-top: 1rem;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="digital-card">
+        <!-- Screenshot Prompt -->
+        <div class="screenshot-banner">
+            <span>📸 Take a screenshot to save this card!</span>
+        </div>
+
+        <h1>TAKE 2</h1>
+        <p class="subtitle">Live Acoustic & Jazz Duo</p>
+
+        <!-- Dan Reynolds -->
+        <div class="contact-block">
+            <strong>Dan Reynolds</strong>
+            <a href="tel:4012156638">📞 (401) 215-6638</a>
+        </div>
+
+        <!-- Jeff Shea -->
+        <div class="contact-block">
+            <strong>Jeff Shea</strong>
+            <a href="tel:4017416367">📞 (401) 741-6367</a>
+        </div>
+
+        <!-- Direct Actions -->
+        <a href="samples.html" class="action-btn">Listen to Audio Samples</a>
+        <a href="https://take2music.net" class="website-link">www.take2music.net</a>
+    </div>
+
+</body>
+</html>
